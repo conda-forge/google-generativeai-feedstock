@@ -1,5 +1,5 @@
 {% set name = "google-generativeai" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/google-gemini/generative-ai-python/archive/v{{ version }}.tar.gz
-  sha256: e47c454678e8528fad9d866988ec13eaf937eeef1a77eb4d738c03ff33ff6dd0
+  sha256: 1daddb7889ca724440aada29415038cc47add294480669f41716aaefa615cb48
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - google-ai-generativelanguage =0.6.4
+    - google-ai-generativelanguage =0.6.5
     - google-api-core
     - google-api-python-client
     - google-auth >=2.15.0
