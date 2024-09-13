@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
   run:
     - python >=3.9
     - google-ai-generativelanguage =0.6.9
