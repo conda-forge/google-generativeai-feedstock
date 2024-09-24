@@ -1,13 +1,13 @@
 {% set name = "google-generativeai" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/google-gemini/generative-ai-python/archive/{{ version }}.tar.gz
-  sha256: d44aa77865edc0d2a47e9c07106d2c9be72d3ff3a65340c5187f8d5c05745971
+  url: https://github.com/google-gemini/generative-ai-python/archive/v{{ version }}.tar.gz
+  sha256: e5647cef1cfce71e482a0b94f17f08aa46254a1b78425e2414fe10aac5150b68
 
 build:
   noarch: python
