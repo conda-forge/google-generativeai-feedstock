@@ -1,6 +1,6 @@
 context:
   name: google-generativeai
-  version: 0.8.4
+  version: "0.8.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/google-gemini/generative-ai-python/archive/v${{ version }}.tar.gz
-  sha256: e6f99187ef7073b357b75daa437b02e90b1f9a9730b716121ae5b2c96f6b2c01
+  sha256: 2baa9b7cda3df8d9ca609b0eeac404e697bf0d046294becc5d90aa5b30c4c272
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
