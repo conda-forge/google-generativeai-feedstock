@@ -30,6 +30,8 @@ requirements:
     - protobuf
     - pydantic
     - tqdm
+    - grpcio
+
 tests:
   - python:
       imports:
