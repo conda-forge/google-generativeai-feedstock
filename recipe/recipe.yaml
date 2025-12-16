@@ -1,6 +1,6 @@
 context:
   name: google-generativeai
-  version: "0.8.5"
+  version: 0.8.6
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/google-gemini/generative-ai-python/archive/v${{ version }}.tar.gz
-  sha256: 2baa9b7cda3df8d9ca609b0eeac404e697bf0d046294becc5d90aa5b30c4c272
+  sha256: e58365ea1c36da40e07c8917cd50b647f6eaf4189f6682728d79327c84ab7e70
 
 build:
   number: 0
@@ -30,7 +30,6 @@ requirements:
     - protobuf
     - pydantic
     - tqdm
-    - typing-extensions
     - grpcio
 
 tests:
@@ -46,7 +45,7 @@ tests:
       - pip check
 
 about:
-  summary: "The Gemini API Python SDK enables developers to use Google's state-of-the-art generative AI models to build AI-powered features and applications."
+  summary: The Gemini API Python SDK enables developers to use Google's state-of-the-art generative AI models to build AI-powered features and applications.
   license: Apache-2.0
   license_file: LICENSE
   homepage: https://github.com/google/generative-ai-python
